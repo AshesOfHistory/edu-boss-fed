@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- 根路由出口 -->
-    <layout></layout>
+    <layout/>
   </div>
 </template>
 
