@@ -1,9 +1,23 @@
 <template>
   <div id="app">
-    <h1>拉勾教育</h1>
-    <!-- 跟路由出口 -->
-    <router-view/>
+    <!-- 根路由出口 -->
+    <layout></layout>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<script lang="ts">
+/**
+ * 1.编辑器给的类型提示
+ * 2.TypeScript编译期间的类型验证
+ */
+import Vue from 'vue'
+import layout from '@/layout/index.vue'
+
+export default Vue.extend({
+  name: 'App',
+  components: { layout }
+})
+</script>
+
+<style lang="scss" scoped>
+</style>
